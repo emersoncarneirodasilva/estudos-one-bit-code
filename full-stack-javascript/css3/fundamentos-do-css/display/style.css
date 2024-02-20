@@ -1,0 +1,38 @@
+/* inline: não quebra de linha, largura mínima, apenas aceita margem e preenchimento horizontal */
+.inline {
+  display: inline;
+  margin-top: 100px; /* não aceita */
+  margin-bottom: 100px; /* não aceita */
+  margin-left: 20px; /* aceita */
+  margin-right: 20px; /* aceita */
+  padding-top: 100px; /* não aceita */
+  padding-bottom: 100px; /* não aceita */
+  padding-left: 20px; /* aceita */
+  padding-right: 20px; /* aceita */
+}
+
+/* block: quebra de linha, largura máxima, aceita margem e preenchimento vertical */
+.block {
+  display: block;
+  margin-top: 10px; /* aceita */
+  margin-bottom: 10px; /* aceita */
+  margin-left: 20px; /* aceita */
+  margin-right: 20px; /* aceita */
+  padding-top: 10px; /* aceita */
+  padding-bottom: 10px; /* aceita */
+  padding-left: 20px; /* aceita */
+  padding-right: 20px; /* aceita */
+}
+
+/* inline-block: não quebra linha, largura mínima, aceita margem e preenchimento vertical */
+.inline-block {
+  display: inline-block;
+  margin-top: 10px; /* aceita */
+  margin-bottom: 10px; /* aceita */
+  margin-left: 20px; /* aceita */
+  margin-right: 20px; /* aceita */
+  padding-top: 10px; /* aceita */
+  padding-bottom: 10px; /* aceita */
+  padding-left: 20px; /* aceita */
+  padding-right: 20px; /* aceita */
+}

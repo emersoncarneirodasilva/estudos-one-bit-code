@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 10px;
+  background-color: #232323;
+  color: #fff;
+}
+
+section {
+  height: 100px;
+}
+
+.box {
+  display: inline-block;
+  font-size: 16px;
+  width: 75px;
+  margin-top: 20px;
+  border: 1px solid #232323;
+}
+
+.px {
+  height: 10px;
+}
+
+/* root element -> 16px * 3 = 48px */
+.rem {
+  height: 3rem;
+}
+
+.em {
+  font-size: 20px;
+  padding: 1em;
+}
+
+.prcnt-33 {
+  height: 33%;
+}
+
+.prcnt-66 {
+  height: 66%;
+}
+
+.prcnt-100 {
+  height: 100%;
+}
+
+/* viewport height */
+.vh {
+  height: 30vh;
+}
+
+/* viewport width */
+.vw {
+  width: 50vw;
+}
