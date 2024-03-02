@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Validador de email e senha</title>
+  </head>
+
+  <body>
+    <h1>Validador de email e senha</h1>
+    <main>
+      <section>
+        <form id="form">
+          <label for="name">Nome: </label>
+          <input type="text" name="name" id="name" />
+          <span id="name-error"></span>
+
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" />
+          <span id="email-error"></span>
+
+          <label for="password">Senha: </label>
+          <input type="password" name="password" id="password" />
+          <span id="password-error"></span>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
