@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Finanças Pessoais</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Finanças Pessoais</h1>
+      <div class="content-central">
+        <form action="http://localhost:3000/articles" method="post">
+          <h2>Nova Transação</h2>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="value">Valor:</label>
+          <input type="number" id="value" name="value" required />
+          <label for="description">Descrição:</label>
+          <textarea
+            id="description"
+            name="description"
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <button type="submit">Salvar</button>
+        </form>
+
+        <div class="transactions-content">
+          <h2>Transações Realizadas</h2>
+          <section id="transactions"></section>
+        </div>
+      </div>
+
+      <div class="total-value">
+        <h2>Total:</h2>
+        <section id="total"></section>
+      </div>
+    </main>
+  </body>
+</html>

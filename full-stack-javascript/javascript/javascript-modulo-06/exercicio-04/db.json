@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": "7fea",
+      "name": "Pizza",
+      "value": "-60",
+      "description": "Pizza comprada fim de semana"
+    },
+    {
+      "id": "07c7",
+      "name": "Água",
+      "value": "-70",
+      "description": "Pagamento da conta de água do mês"
+    },
+    {
+      "id": "5dc3",
+      "name": "Aniversário",
+      "value": "-1500",
+      "description": "Pagamento referente ao aniversário de minha mãe, realizado no salão fulano de tal"
+    },
+    {
+      "id": "33e4",
+      "name": "Salário",
+      "value": "3500",
+      "description": "Salário do mês"
+    }
+  ]
+}
