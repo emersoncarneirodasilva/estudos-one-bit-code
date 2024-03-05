@@ -36,6 +36,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 label {
@@ -89,6 +90,13 @@ textarea:focus {
   font-weight: 600;
 }
 
+.container-btn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1em;
+}
+
 button {
   width: 75px;
   margin: 1em 0;
@@ -106,8 +114,6 @@ button:hover {
 
 .transactions-content {
   width: 100%;
-
-  /* background-color: rgb(0, 17, 255); */
 }
 
 .transactions-content > h2 {

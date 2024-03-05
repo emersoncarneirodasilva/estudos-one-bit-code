@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
-    <title>Finanças Pessoais</title>
+    <title>Minhas Finanças</title>
   </head>
 
   <body>
     <main>
       <h1>Finanças Pessoais</h1>
       <div class="content-central">
-        <form action="http://localhost:3000/articles" method="post">
+        <form id="form" action="http://localhost:3000/articles" method="post">
           <h2>Nova Transação</h2>
+          <!-- Esse input foi feito no js, no botão de editar -->
+          <!-- <input type="hidden" id="id" name="id" /> -->
           <label for="name">Nome:</label>
           <input type="text" id="name" name="name" required />
           <label for="value">Valor:</label>
