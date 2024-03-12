@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: darkgray;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  font-size: 26px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+/* OBS: O align-content: center, deixa os espaços entre os itens superiores e inferiores iguais. 
+        Já o align-items: center, só centraliza todo o conteúdo deixando um espaço maior entre os itens superiores e inferiores. */
+
+.container {
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  align-content: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: darkgray;
+}
+
+.item {
+  display: flex;
+  flex-basis: 350px;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  height: 230px;
+  border: 2px solid black;
+  background-color: white;
+}

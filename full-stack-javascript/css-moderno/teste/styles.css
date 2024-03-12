@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* OBS: Os display: flex, flex-direction: column e min-height: 100vh são importantes para deixar o conteúdo completo na tela */
+body {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+
+header,
+footer {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  color: #f1f1f1;
+  background-color: #4b4b4d;
+}
+
+/* OBS: O flex tem total importância para organizar os espaçamentos dos elementos header, main e footer na tela */
+main {
+  display: flex;
+  flex: 1 0 auto;
+}
