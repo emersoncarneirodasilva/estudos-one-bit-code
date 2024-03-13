@@ -1,0 +1,300 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #121212;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+  color: #cccccc;
+  background-color: #121212;
+}
+
+img {
+  width: 220px;
+}
+
+header > .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0 35px;
+  width: 100%;
+}
+
+header .btn {
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: 0.4s all ease;
+}
+
+header .btn:hover {
+  border-bottom: 2px solid #ca0136;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  flex: 1 0 auto;
+  min-height: 100vh;
+}
+
+main > h1 {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+main > h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0 35px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+  min-width: 100%;
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "card-1 card-2 card-3"
+    "card-4 card-5 card-6"
+    "card-7 card-8 card-9";
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.cards-section > .card {
+  width: 280px;
+  height: 360px;
+  transition: 0.2s all ease;
+}
+
+.cards-section > .card:hover {
+  scale: 1.01;
+  border-radius: 8px;
+  border: 1px solid #121212;
+  box-shadow: 1px 1px 10px #121212;
+  cursor: pointer;
+}
+
+.card-1 {
+  grid-area: card-1;
+}
+
+.card-2 {
+  grid-area: card-2;
+}
+
+.card-3 {
+  grid-area: card-3;
+}
+
+.card-4 {
+  grid-area: card-4;
+}
+
+.card-5 {
+  grid-area: card-5;
+}
+
+.card-6 {
+  grid-area: card-6;
+}
+
+.card-7 {
+  grid-area: card-7;
+}
+
+.card-8 {
+  grid-area: card-8;
+}
+
+.card-9 {
+  grid-area: card-9;
+}
+
+.card > img {
+  width: 100%;
+  height: 190px;
+  border-radius: 8px;
+}
+
+.card > h3,
+.card > p {
+  padding: 5px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 80px;
+  min-height: 100vh;
+  max-width: 380px;
+  gap: 30px 0;
+  color: #cccccc;
+  background-color: #121212;
+}
+
+.sidebar-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s all ease;
+}
+
+.sidebar-img:hover {
+  scale: 1.01;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+
+.sidebar > h3,
+.sidebar p {
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+.sidebar p {
+  margin-top: 15px;
+}
+
+.sidebar-img > img {
+  width: 220px;
+  height: 140px;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #cccccc;
+  transition: 0.2s all ease;
+}
+
+footer > a:hover {
+  color: #ca0136;
+  cursor: pointer;
+}
+
+@media (max-width: 1275px) {
+  .cards-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "card-1 card-2"
+      "card-3 card-4"
+      "card-5 card-6"
+      "card-7 card-8"
+      "card-9 card-9";
+  }
+}
+
+@media (max-width: 980px) {
+  .cards-section {
+    grid-template-areas:
+      "card-1 card-1"
+      "card-2 card-2"
+      "card-3 card-3"
+      "card-4 card-4"
+      "card-5 card-5"
+      "card-6 card-6"
+      "card-7 card-7"
+      "card-8 card-8"
+      "card-9 card-9";
+  }
+}
+
+@media (max-width: 755px) {
+  main > h1 {
+    font-size: 28px;
+  }
+
+  main > h2 {
+    text-align: center;
+    font-size: 16px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 685px) {
+  .main-container {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+
+  .sidebar {
+    padding: 20px 0;
+    max-width: 100%;
+  }
+
+  .sidebar-img > img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 510px) {
+  header,
+  footer {
+    flex-direction: column;
+    gap: 15px 0;
+  }
+
+  header > .nav-container {
+    justify-content: center;
+  }
+
+  main > h1 {
+    font-size: 24px;
+  }
+
+  footer > a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 370px) {
+  .nav-container > .btn {
+    font-size: 14px;
+  }
+
+  main > h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  main > h2 {
+    font-size: 14px;
+  }
+
+  .sidebar p {
+    font-size: 14px;
+  }
+}

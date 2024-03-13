@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr; /* OBS: Mesmo que: 25% 50% 25% */
+  /* grid-template-columns: repeat(3, 1fr); OBS: Mesmo que: 1fr 1fr 1fr */
+  /* grid-template-rows: repeat(3, 1fr); OBS: Mesmo que: 1fr 1fr 1fr */
+  grid-auto-rows: minmax(350px, auto); /* OBS: Mínimo (350px) e máximo (auto) */
+  gap: 10px 15px; /* OBS: Mesmo que: row-gap: 10px e column-gap: 15px juntos (shorthand)   */
+  min-height: 100vh;
+  background-color: darkgray;
+}
+
+.item {
+  font-size: 30px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: white;
+}
