@@ -1,0 +1,24 @@
+// Funções do Sass (Sass Manipulate Color Functions - w3schools)
+// OBS: Quanto mais próximo a 100%, maior o indice da primeira cor,
+// consequentemente, quanto mais proximo a 0%, maior o indece da segunda cor
+// .title {
+//   color: mix(#ff0000, #ffff00, 50%);
+// }
+
+// Construíndo funções
+@function title-color($background-color) {
+  @if (lightness($background-color) >50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+@mixin background-color-mixin($color) {
+  background-color: $color;
+  color: title-color($color);
+}
+
+.title {
+  @include background-color-mixin(#872ad3);
+}

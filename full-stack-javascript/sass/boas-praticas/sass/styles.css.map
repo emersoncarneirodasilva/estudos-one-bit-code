@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["variables/common/common.scss","variables/colors/colors.scss","pages/cadastro.scss","pages/login.scss"],"names":[],"mappings":"AAAA,YACE,uBACA,eAGF,KACE,eACA,WACA,YACA,kBACA,WACA,iBCVe,KDWf,wBAEA,WACE,WACA,eAIJ,EACE,qBErBF,eFyBE,YExBqB,WFyBrB,UEzBiC,KF0BjC,ME1BuC,sBFwBvC,YGvBuB,WHwBvB,UGxBmC,KHyBnC,MGzByC","file":"styles.css"}

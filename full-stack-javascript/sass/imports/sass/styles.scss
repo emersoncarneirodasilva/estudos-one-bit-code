@@ -1,0 +1,3 @@
+// OBS: O Import "colors.scss" vem primeiro pois ele está sendo usado no "home.scss"
+@import "colors/colors.scss";
+@import "pages/home.scss";

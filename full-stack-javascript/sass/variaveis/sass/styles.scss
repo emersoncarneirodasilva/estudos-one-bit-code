@@ -1,0 +1,21 @@
+$btn-color: #ab5cf5;
+$btn-padding: 8px;
+$btn-radius: 5px;
+
+.btn1 {
+  padding: $btn-padding;
+  border-radius: $btn-radius;
+  border: none;
+  color: #fff;
+  background-color: $btn-color;
+  cursor: pointer;
+}
+
+.btn2 {
+  padding: $btn-padding;
+  border-radius: $btn-radius;
+  border: 1px solid #410a74;
+  color: #fff;
+  background-color: $btn-color;
+  cursor: pointer;
+}

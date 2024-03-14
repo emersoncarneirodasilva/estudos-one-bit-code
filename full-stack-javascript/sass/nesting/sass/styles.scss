@@ -1,0 +1,25 @@
+.class1 {
+  ul {
+    background-color: rgb(255, 153, 0);
+  }
+
+  li {
+    padding: 10px 5px;
+    background-color: rgb(119, 0, 255);
+  }
+
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #ececec;
+    background-color: #2199df;
+    cursor: pointer;
+    transition: 0.2s all ease;
+
+    &:hover {
+      scale: 1.02;
+      background-color: #3ab4fa;
+    }
+  }
+}

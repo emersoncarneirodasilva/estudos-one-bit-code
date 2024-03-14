@@ -1,0 +1,30 @@
+body {
+  background-color: #1f1d1d;
+}
+
+.btn, .btn-purple {
+  display: block;
+  padding: 10px 0;
+  margin-top: 10px;
+  width: 115px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+.btn:hover, .btn-purple:hover {
+  scale: 1.02;
+  opacity: 1;
+}
+.btn.btn-orange, .btn-orange.btn-purple {
+  background-color: orange;
+}
+.btn.btn-green, .btn-green.btn-purple {
+  background-color: green;
+}
+
+.btn-purple {
+  background-color: purple;
+}/*# sourceMappingURL=styles.css.map */

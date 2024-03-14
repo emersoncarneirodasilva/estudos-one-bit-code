@@ -1,0 +1,37 @@
+body {
+  background-color: #1f1d1d;
+}
+
+.btn {
+  display: block;
+  padding: 10px 0;
+  margin-top: 10px;
+  width: 115px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.2s all ease;
+
+  &:hover {
+    scale: 1.02;
+    opacity: 1;
+  }
+
+  // Herança
+  &.btn-orange {
+    background-color: orange;
+  }
+
+  // Herança
+  &.btn-green {
+    background-color: green;
+  }
+}
+
+// Extend
+.btn-purple {
+  @extend .btn;
+  background-color: purple;
+}

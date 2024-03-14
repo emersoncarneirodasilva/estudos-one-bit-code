@@ -1,0 +1,5 @@
+.container {
+  h2 {
+    @include text-styles(sans-serif, 22px, #47be3c);
+  }
+}
