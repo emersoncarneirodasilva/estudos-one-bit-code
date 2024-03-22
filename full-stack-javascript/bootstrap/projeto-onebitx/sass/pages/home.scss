@@ -1,0 +1,58 @@
+main {
+  .first-section {
+    background-image: url("../imgs/home/01.jpg");
+
+    .main-content {
+      margin-top: -20px;
+    }
+  }
+
+  .second-section {
+    background-image: url("../imgs/home/03.jpg");
+  }
+
+  .third-section {
+    background-image: url("../imgs/home/02.gif");
+  }
+
+  .fourth-section {
+    background-image: url("../imgs/home/04.jpg");
+
+    .main-content {
+      h3 {
+        width: 650px;
+        font-size: 40px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  @media (max-width: 770px) {
+    .second-section,
+    .third-section,
+    .fourth-section {
+      .main-content {
+        h3 {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    .first-section,
+    .second-section,
+    .third-section,
+    .fourth-section {
+      .main-content {
+        h2 {
+          font-size: 16px;
+        }
+
+        h3 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

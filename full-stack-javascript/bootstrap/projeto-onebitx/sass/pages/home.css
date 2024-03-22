@@ -1,0 +1,41 @@
+main .first-section {
+  background-image: url("../imgs/home/01.jpg");
+}
+main .first-section .main-content {
+  margin-top: -20px;
+}
+main .second-section {
+  background-image: url("../imgs/home/03.jpg");
+}
+main .third-section {
+  background-image: url("../imgs/home/02.gif");
+}
+main .fourth-section {
+  background-image: url("../imgs/home/04.jpg");
+}
+main .fourth-section .main-content h3 {
+  width: 650px;
+  font-size: 40px;
+  font-weight: 500;
+}
+@media (max-width: 770px) {
+  main .second-section .main-content h3,
+  main .third-section .main-content h3,
+  main .fourth-section .main-content h3 {
+    width: auto;
+  }
+}
+@media (max-width: 350px) {
+  main .first-section .main-content h2,
+  main .second-section .main-content h2,
+  main .third-section .main-content h2,
+  main .fourth-section .main-content h2 {
+    font-size: 16px;
+  }
+  main .first-section .main-content h3,
+  main .second-section .main-content h3,
+  main .third-section .main-content h3,
+  main .fourth-section .main-content h3 {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=home.css.map */
