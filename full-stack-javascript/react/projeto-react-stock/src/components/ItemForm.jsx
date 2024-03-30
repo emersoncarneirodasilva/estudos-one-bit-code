@@ -8,7 +8,7 @@ ItemForm.propTypes = {
   itemToUpdate: PropTypes.object,
 };
 
-export default function ItemForm({ itemToUpdate }) {
+function ItemForm({ itemToUpdate }) {
   const defaultItem = {
     name: "",
     description: "",
@@ -22,12 +22,16 @@ export default function ItemForm({ itemToUpdate }) {
   const inputRef = useRef(null);
   const navigate = useNavigate();
 
-  const handleChange = (ev) => {
-    setItem((current) => ({ ...current, [ev.target.name]: ev.target.value }));
+  const handleChange = (e) => {
+    setItem((currentState) => ({
+      ...currentState,
+      [e.target.name]: e.target.value,
+    }));
   };
 
-  const handleSubmit = (ev) => {
-    ev.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     try {
       if (itemToUpdate) {
         updateItem(itemToUpdate.id, item);
@@ -38,15 +42,14 @@ export default function ItemForm({ itemToUpdate }) {
         setItem(defaultItem);
         alert("Item cadastrado com sucesso!");
       }
-    } catch (err) {
-      console.log(err.message);
+    } catch (error) {
+      console.log(error.message);
       alert("Ocorreu um erro.");
     } finally {
       inputRef.current.focus();
     }
 
     navigate("/items");
-    // window.location.reload();
   };
 
   return (
@@ -129,3 +132,5 @@ export default function ItemForm({ itemToUpdate }) {
     </form>
   );
 }
+
+export default ItemForm;

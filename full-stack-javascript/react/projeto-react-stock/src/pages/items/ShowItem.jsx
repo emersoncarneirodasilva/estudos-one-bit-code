@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import useStock from "../../hooks/useStock";
 import DeleteButton from "../../components/DeleteButton";
 
-export default function ShowItem() {
+function ShowItem() {
   const { getItem } = useStock();
   const { id } = useParams();
 
@@ -22,9 +22,11 @@ export default function ShowItem() {
       </div>
       <p>{item.description}</p>
       <div className="row">
-        <p>Cadastrado em: {item.createdAt.toDateString()}</p>
-        <p>Atualizado em: {item.updatedAt.toDateString()}</p>
+        <p>Cadastrado em: {item.createdAt.toLocaleString("pt-BR")}</p>
+        <p>Atualizado em: {item.updatedAt.toLocaleString("pt-BR")}</p>
       </div>
     </div>
   );
 }
+
+export default ShowItem;

@@ -7,7 +7,7 @@ DeleteButton.propTypes = {
   itemName: PropTypes.string,
 };
 
-export default function DeleteButton({ itemId, itemName }) {
+function DeleteButton({ itemId, itemName }) {
   const { deleteItem } = useStock();
   const navigate = useNavigate();
 
@@ -24,3 +24,5 @@ export default function DeleteButton({ itemId, itemName }) {
     </button>
   );
 }
+
+export default DeleteButton;

@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import useStock from "../../hooks/useStock";
 import ItemForm from "../../components/ItemForm";
 
-export default function UpdateItem() {
+function UpdateItem() {
   const { getItem } = useStock();
   const { id } = useParams();
 
@@ -15,3 +15,5 @@ export default function UpdateItem() {
     </>
   );
 }
+
+export default UpdateItem;

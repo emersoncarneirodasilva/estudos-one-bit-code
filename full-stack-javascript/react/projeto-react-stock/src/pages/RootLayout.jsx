@@ -9,7 +9,7 @@ function RootLayout() {
         </Link>
         <nav>
           <Link to="/">Início</Link>
-          <Link to="items">Itens</Link>
+          <Link to="/items">Itens</Link>
         </nav>
       </header>
       <div>

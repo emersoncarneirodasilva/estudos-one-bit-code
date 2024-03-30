@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import useStock from "../hooks/useStock";
 
-export default function Home() {
+function Home() {
   const { items } = useStock();
 
   const diversity = items.length;
@@ -90,3 +90,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default Home;

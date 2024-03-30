@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import useStock from "../hooks/useStock";
 import DeleteButton from "./DeleteButton";
 
-export default function ItemsTable() {
+function ItemsTable() {
   const { items } = useStock();
 
   return (
@@ -41,3 +41,5 @@ export default function ItemsTable() {
     </table>
   );
 }
+
+export default ItemsTable;
