@@ -1,0 +1,65 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #428cd1;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 17px;
+  padding: 20px 0;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.cardContainer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.cardContainer hr {
+  width: 100%;
+  border: 1px solid #428cd1;
+}
+
+.cardContainer h2 {
+  margin-top: 10px;
+}
+
+.btnFollow {
+  font-weight: 600;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-image: linear-gradient(to right, #8d8d8d, #cbcccc);
+  transition: 0.3s all ease;
+}
+
+.btnFollow:hover {
+  scale: 1.02;
+  cursor: pointer;
+}
+
+@media (max-width: 430px) {
+  .cardContainer {
+    width: auto;
+    height: auto;
+  }
+
+  .cardContainer h2,
+  p {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,21 @@
+.btn {
+  padding: 10px 0;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #3386c7, #6cc3e3);
+  transition: 0.3s all ease;
+}
+
+.btn:hover {
+  scale: 1.02;
+  transform: translate(3px, -3px);
+  cursor: pointer;
+}
+
+.btn a {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}

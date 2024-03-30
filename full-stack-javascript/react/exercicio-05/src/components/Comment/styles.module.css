@@ -1,0 +1,31 @@
+.commentContainer {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  width: 100%;
+  gap: 10px;
+
+  /* background-color: rgba(221, 123, 123, 0.301); */
+}
+
+.email {
+  font-weight: bolder;
+}
+
+.commentContainer button {
+  font-weight: 500;
+  padding: 8px 0;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  opacity: 0.9;
+  background-color: rgb(238, 30, 30);
+  transition: 0.2s all ease;
+}
+
+.commentContainer button:hover {
+  scale: 1.02;
+  opacity: 1;
+  cursor: pointer;
+}

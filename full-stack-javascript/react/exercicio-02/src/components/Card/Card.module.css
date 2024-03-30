@@ -1,0 +1,80 @@
+.body {
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  width: 100%;
+  height: 100%;
+  padding: 0 5rem;
+  border-radius: 20px;
+  background-color: #d7e1e7;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+.imgContainer > img {
+  width: 100%;
+  height: auto;
+  border: 10px solid #000;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2.5rem;
+  width: 70%;
+  height: 70%;
+}
+
+.textContainer h1 {
+  font-size: 2.375rem;
+}
+
+.textContainer p {
+  font-size: 1.375rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 940px) {
+  .textContainer h1 {
+    font-size: 1.75rem;
+  }
+
+  .textContainer p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .cardContainer,
+  .textContainer {
+    flex-direction: column;
+    gap: 2.188rem;
+    padding: 1.563rem;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardContainer,
+  .textContainer {
+    gap: 0.938rem;
+  }
+
+  .textContainer p {
+    font-size: 1rem;
+  }
+}

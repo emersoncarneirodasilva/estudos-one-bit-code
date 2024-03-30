@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.form label {
+  font-size: 16px;
+}
+
+.form input {
+  font-size: 18px;
+  height: 40px;
+}
+
+.form input,
+textarea {
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 0 3px;
+}
+
+.form button {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #1738cf;
+  opacity: 0.9;
+  transition: 0.2s all ease;
+}
+
+.form button:hover {
+  scale: 1.01;
+  opacity: 1;
+  cursor: pointer;
+}
