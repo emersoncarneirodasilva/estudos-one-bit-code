@@ -24,7 +24,7 @@ const Home: NextPage = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
             iusto voluptatem obcaecati omnis error architecto neque cum
             exercitationem fugiat. Vero illo autem eum nisi sapiente, odio optio
-            accusamus cupiditate ad.
+            accusamus cupiditate adi.
           </p>
           <Link href="/products">
             <Button color="dark" className="px-4 pb-2">
