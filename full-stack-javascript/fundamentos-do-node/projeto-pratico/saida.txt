@@ -1,0 +1,17 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Testando&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;Teste&lt;/h1&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur
+      qui omnis, nemo optio deserunt. Mollitia, corporis voluptate. Natus minus
+      ex tempore consequatur doloribus ea facere, quia accusantium accusamus ad.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

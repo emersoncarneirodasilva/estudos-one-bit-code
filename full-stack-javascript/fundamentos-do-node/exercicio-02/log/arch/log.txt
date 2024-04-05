@@ -1,0 +1,7 @@
+Detalhes do Sistema
+Sistema opelracional: Windows
+Arquitetura: x64
+Modelo do Processador: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+Tempo de Atividade do Sistema: 4:99:29:38
+Uso da memória RAM: 80.80%
+
