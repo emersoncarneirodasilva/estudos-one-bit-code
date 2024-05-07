@@ -1,8 +1,26 @@
 import MusicInList from "./MusicInList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function MusicList() {
   const [musicList, setMusicList] = useState([]);
+
+  const fetchMusicList = async () => {
+    try {
+      await window.electronAPI.SendToElectron("music-get");
+      await window.electronAPI.ReciveFromElectron(
+        "music-list",
+        (event, arg) => {
+          setMusicList(arg);
+        }
+      );
+    } catch (error) {
+      console.error("Erro ao obter a lista de músicas:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchMusicList();
+  }, []);
 
   return (
     <div className="w-11/12">

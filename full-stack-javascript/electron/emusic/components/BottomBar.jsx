@@ -11,7 +11,7 @@ export default function BottomBar() {
       <nav className="fixed bottom-0 pt-4 w-full h-20 bg-[#1F1F22] flex justify-center">
         <ControlMusic />
       </nav>
-      <div className="absolute bottom-0 right-0 flex items-center justify-end p-7">
+      <div className="absolute bottom-0 right-0 flex items-center justify-end cursor-pointer p-7">
         <PlayListIcon onClick={handleModalPlayList} />
       </div>
     </>

@@ -1,7 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Toast() {
   const [mensagem, setMensagem] = useState("");
+
+  useEffect(() => {
+    window.electronAPI.ReciveFromElectron("toast:recive", (event, arg) => {
+      setMensagem(arg);
+
+      const toast = document.getElementById("toast");
+      toast.classList.add("flex");
+      toast.classList.remove("hidden");
+
+      setTimeout(() => {
+        handleClose();
+      }, 5000);
+    });
+  }, []);
+
+  function handleClose() {
+    setMensagem("");
+
+    const toast = document.getElementById("toast");
+    toast.classList.add("hidden");
+    toast.classList.remove("flex");
+  }
 
   return (
     <div
@@ -32,6 +54,7 @@ export default function Toast() {
           className="box-content ml-2 border-none rounded-none opacity-80 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
           data-te-toast-dismiss
           aria-label="Close"
+          onClick={handleClose}
         >
           <span className="w-[1em] focus:opacity-100 disabled:pointer-events-none disabled:select-none disabled:opacity-25 [&.disabled]:pointer-events-none [&.disabled]:select-none [&.disabled]:opacity-25">
             <svg
