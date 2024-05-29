@@ -17,7 +17,7 @@ export default function ModalPlaylist() {
       <h1 className="text-center text-white">PlayList</h1>
       <div className="m-4 bg-[#171719]">
         {musicPlayList.length === 0 ? (
-          <p className="text-zinc-400">Empty</p>
+          <p className="text-gray-400">Empty</p>
         ) : (
           musicPlayList.map((music, index) => {
             return (
